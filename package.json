@@ -10,7 +10,9 @@
     "test:4": "jest algo/4",
     "test:5": "jest algo/5",
     "test:6": "jest algo/6",
-    "test": "jest"
+    "test": "jest",
+    "web": "http-server . -p 8000" 
+
   },
   "repository": {
     "type": "git",
@@ -23,6 +25,7 @@
   },
   "homepage": "https://github.com/WildCodeSchool/js_checkpoint1#readme",
   "devDependencies": {
+    "http-server": "^14.1.1",
     "jest": "^29.7.0"
   }
 }

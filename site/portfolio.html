@@ -22,6 +22,18 @@
       <!-- First banner with title, description, avatar and image desktop -->
       <!-- You can use the avatar image on the folder image -->
       <section class="introduction">
+        <div class="title">
+          <h1 class="dev">
+            fullStack developer
+          </h1>
+          <p1 class="desc">
+            I design and code beautifully simple things, and I love what I do.
+          </p1>
+        </div>
+        <div class="avatar">
+          <img id="avatarImage" src="image/avatar-bis.png" alt="Avatar" style="cursor: pointer;" />
+
+        </div>
         <figure class="desktop">
           <img src="image/desktop.svg" alt="desktop" />
         </figure>
@@ -32,7 +44,10 @@
         <div class="description pink-bg">
           <h2>Hi, I’m <span id="name">Matt</span>. Nice to meet you.</h2>
           <p>Since the beginning of my journey as a freelance developer nearly 10 years ago, I've done remote work for agencies, consulted for startups, and collaborated with talented people to create digital products for both business and consumer use. I'm quietly confident, naturally curious, and perpetually working on improving my chops one problem at a time.</p>
-        </div>
+          <button id="modifyButton">Modify Name and Background Color</button>
+      </div>
+      
+      
 
         <!-- Bloc of list of skill front end and back end -->
         <div class="skills">
@@ -61,7 +76,12 @@
                 <li>You can modify</li>
                 <li>You can modify</li>
                 <li>You can modify</li>
+                <!-- Create a button and an input text in the HTML file. The button is to add a new li element to the dev tool list back. -->
               </ul>
+              <input type="text" id="newTool">
+                <button class="add" id="addButton">
+                  Add Dev Tools
+                </button>
             </figure>
           </div>
         </div>
@@ -97,7 +117,7 @@
         </div>
       </section>      
     </main>
-    <footer class="presentation">
+    <footer class="footer">
       <div class="description pink-bg">
         <img src="image/logo-white.svg" alt='logo-white' />
         <h2>Living, learning, & leveling up one day at a time.</h2>

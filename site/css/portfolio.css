@@ -1,3 +1,5 @@
+
+
 .pink-bg {
   background-color: pink;
 }
@@ -28,6 +30,8 @@
 }
 
 .skills {
+  display: flex;
+  
   margin-top: -30px;
   border-radius: 12px;
   padding: 0 10%;
@@ -42,6 +46,7 @@
   border-radius: 12px;
   text-align: center;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
+  width: 500px;
 }
 
 .column:first-child {
@@ -66,6 +71,7 @@
   margin: 20px;
   border-radius: 12px;
   box-shadow: 0 5px 5px 0 rgba(233, 240, 243, 0.5);
+  text-align: center;
 }
 
 img {
@@ -75,8 +81,115 @@ img {
 .projects a {
   color: #750ff7;
 }
+.proojects .disabled {
+  opacity: 0.5;
+  pointer-events: none;
+  text-decoration: none;
+  color: gray;
+}
 
 p {
   padding-left: 15px;
   padding-right: 15px;
+}
+
+.navbar{
+  display: flex;
+  justify-content: space-between;
+}
+
+.introduction{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+.avatar{
+  width: 200px;
+  height: 200px;
+  border-radius: 50%;
+  margin-top: 20px;
+  margin-bottom: 20px;
+}
+
+.presentation{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  
+}
+
+.projects .contents {
+  display: flex;
+  flex-direction: column;
+}
+
+.projects .box {
+  margin-bottom: 20px; 
+  
+}
+
+.heading {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+
+#modifyButton{
+  background-color:transparent;
+  border-radius: 12px;
+  border-color: #ffffff;
+  padding: 10px;
+  margin-bottom: 20px;
+  color: #e6ecf8;
+  
+}
+
+
+
+
+@media screen and (min-width: 700px) {
+  .projects .contents {
+      flex-direction: row; 
+      flex-wrap: wrap; 
+      justify-content: space-around; 
+  }
+
+  .projects .box {
+      width: calc(33.333% - 150px); 
+      margin-bottom: 20px; 
+      
+  }
+}
+
+
+
+
+
+/* media query 700 px */
+@media (max-width: 700px) {
+  .skills {
+    flex-direction: column;
+  }
+  .column {
+    width: 100%;
+    margin-bottom: 20px;
+  }
+  .column:first-child {
+    border-bottom-left-radius: 12px;
+    border-top-right-radius: 0px;
+  }
+  .column:last-child {
+    border-top-right-radius: 12px;
+    border-bottom-right-radius: 0px;
+  }
+  .box {
+    width: 100%;
+  }
+  .description {
+    padding: 30px;
+  }
+  .desktop {
+    margin: 30px 0 -5px 0;
+  }
 }
